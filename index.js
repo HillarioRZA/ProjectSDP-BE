@@ -27,7 +27,7 @@ app.use(express.json({ limit: "10mb" }));
 // console.log('JWT_SECRET:', jwtSecret);
 
 mongoose
-  .connect(MONGO_URL, {
+  .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
