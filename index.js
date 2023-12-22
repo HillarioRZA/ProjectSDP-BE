@@ -27,7 +27,7 @@ app.use(express.json({ limit: "10mb" }));
 // console.log('JWT_SECRET:', jwtSecret);
 
 mongoose
-  .connect("mongodb+srv://vercel-admin-user-6585393a506e4c45522a78bb:omt8vtSkU8RVf6Ka@cluster0.tagsrfj.mongodb.net/Aquascape?retryWrites=true&w=majority", {
+  .connect(MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
