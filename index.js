@@ -27,7 +27,7 @@ app.use(express.json({ limit: "10mb" }));
 // console.log('JWT_SECRET:', jwtSecret);
 
 mongoose
-  .connect("mongodb+srv://sdp123:sdp123@cluster0.tagsrfj.mongodb.net/Aquascape", {
+  .connect(MONGODB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
