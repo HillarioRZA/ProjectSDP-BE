@@ -37,7 +37,7 @@ mongoose
     process.exit(1);
   });
 
-app.use("/", Routes);
+app.use("./", Routes);
 
 app.use((req, res, next) => {
   res.status(404).json({ message: "Hello Error" });
