@@ -7,7 +7,7 @@ const app = express();
 
 const cors = require("cors");
 
-const MONGO_URL = process.env.MONGODB_URL;
+const MONGO_URL = process.env.MONGODB_URI;
 const jwtSecret = process.env.JWT_SECRET;
 
 const Routes = require("./routes/route.js");
